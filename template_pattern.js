@@ -40,5 +40,26 @@ class Cricket extends Game {
 	}
 }
 
+class Football extends Game {
+	constructor() {
+		super();
+	}
+	
+	endPlay() {
+		console.log('Football Game Finished!');
+	}
+	
+	initialize() {
+		console.log('Football Game Initialized!');
+	}
+	
+	startPlay() {
+		console.log('Football Game Started. Enjoy the game!');
+	}
+}
+
 const cricket_game = new Cricket();
 cricket_game.play();
+console.log('');
+const football_game = new Football();
+football_game.play();
